@@ -27,7 +27,6 @@ footer
 
 header
 {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
@@ -41,13 +40,14 @@ nav a
 {
     margin-left: 2em;
     color: black;
-    padding-top: 1.9em;
-    font-size: 1em;
+    padding-top: 1.9em;         
 }
 
 a
 {
     text-decoration: none;
+    font-size: 1rem;
+    color: black;
 }
 
 nav a:hover
@@ -113,5 +113,47 @@ form button
 i.wen
 {
     display: none;
+}
+
+.filters
+{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.filters ul
+{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+h2
+{
+    font-size: 1.25em;
+}
+
+.filters li
+{
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+    padding: 1em;
+}
+
+.filters li:hover
+{
+    background-color: var(--filter-bg-color);
+}
+
+.filters a
+{
+    font-weight: bold;
+}
+
+.filters i
+{
+    color: var(--main-color);
+    margin-right: 16px;
 }
 
