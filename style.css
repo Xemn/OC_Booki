@@ -173,3 +173,107 @@ h2
     padding: 3px 8px;
 }
 
+.offers
+{
+    margin: 2em 0;
+    display: flex;
+    gap: 2em;
+}
+
+.offers a
+{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.offers img
+{
+
+    border-top-left-radius: 15px;
+    object-fit: cover;
+}
+
+article,
+aside
+{
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+}
+
+article
+{
+    flex: 2;
+}
+
+article h2
+{
+    margin: 2rem;
+}
+
+.hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1em;
+    margin-bottom: 0;
+
+}
+
+.hebergements a
+{
+    width: 30%;
+    margin-bottom: 2em;
+}
+
+.hebergements img
+{
+    border-top-right-radius: 15px;
+    height: 115px;
+    object-fit: cover;
+    width: 100%;
+}
+
+section .allLink
+{
+    border: none;
+    border-radius: 0;
+    background-color: var(--main-bg-color);
+    margin: 2em;
+    font-weight: bold;
+}
+
+aside
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.populaireHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+}
+
+.populaireHeader i
+{
+    color: var(--main-color);
+}
+
+aside a 
+{
+    display: flex;
+    margin: 0 1em 2em 1em;
+}
+
+aside img
+{
+    border-bottom-left-radius: 15px;
+    height: 140px;
+    width: 30%;
+}
