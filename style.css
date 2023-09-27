@@ -139,6 +139,16 @@ h2
     font-size: 1.25em;
 }
 
+h3
+{
+    font-size: 1rem;
+}
+
+p
+{
+    font-size: 0.8rem;
+}
+
 .filters li
 {
     border: 2px solid var(--main-bg-color);
@@ -217,6 +227,20 @@ article h2,
     margin: 2rem;
 }
 
+article a,
+aside a,
+.activities a
+{
+    box-shadow: 2px 7px 8px grey;
+}
+
+article a:hover,
+aside a:hover,
+.activities a:hover
+{
+    transform: scale(1.02);
+}
+
 .hebergements
 {
     display: flex;
@@ -225,6 +249,11 @@ article h2,
     margin: 1em;
     margin-bottom: 0;
 
+}
+
+.hebergements h3
+{
+    margin-bottom: 0.25em;
 }
 
 .hebergements a
@@ -241,6 +270,22 @@ article h2,
     width: 100%;
 }
 
+.hebergements > a > div
+{
+    margin: 0.5em;
+}
+
+.stars
+{
+    margin: 0.5em 0;
+    font-size: 0.8rem;
+    color : var(--main-bg-color)
+}
+
+.stars :nth-child(-n+4)
+{
+    color: var(--main-color)
+}
 section .allLink
 {
     border: none;
@@ -248,6 +293,7 @@ section .allLink
     background-color: var(--main-bg-color);
     margin: 2em;
     font-weight: bold;
+    box-shadow: none;
 }
 
 aside
@@ -255,7 +301,7 @@ aside
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .populaireHeader
@@ -271,6 +317,11 @@ aside
     color: var(--main-color);
 }
 
+aside h3
+{
+    margin-bottom : 0.5em;
+}
+
 aside a 
 {
     display: flex;
@@ -284,6 +335,20 @@ aside img
     width: 30%;
 }
 
+aside div
+{
+    margin: 0.5em;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside .stars
+{
+    flex-direction: row;
+    justify-content: flex-start; 
+}
+
 .activities
 {
     display: flex;
@@ -294,7 +359,7 @@ aside img
 {
     display: flex;
     justify-content: space-around;
-    margin: 1rem;
+    margin: 0 2rem;
     gap: 2em;
 }
 
@@ -310,6 +375,11 @@ aside img
     border-top-right-radius: 15px;
     height: 380px;
     width: 100%;
+}
+
+.activities h3
+{
+    margin: 1em;
 }
 
 footer
