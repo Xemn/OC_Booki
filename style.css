@@ -187,7 +187,8 @@ h2
     border-radius: 15px;
 }
 
-.offers img
+.offers img,
+.activities img
 {
 
     border-top-left-radius: 15px;
@@ -206,7 +207,8 @@ article
     flex: 2;
 }
 
-article h2
+article h2,
+.activities h2
 {
     margin: 2rem;
 }
@@ -276,4 +278,32 @@ aside img
     border-bottom-left-radius: 15px;
     height: 140px;
     width: 30%;
+}
+
+.activities
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.activities div
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    gap: 2em;
+}
+
+.activities a
+{
+    width: 25%;
+    border-radius: 15px;
+    border: 1px solid var(--main-bg-color);
+}
+
+.activities img
+{
+    border-top-right-radius: 15px;
+    height: 380px;
+    width: 100%;
 }
