@@ -16,6 +16,7 @@ body
 {
     width: 100%;
     max-width: 1440px;
+    margin: auto;
 }
 
 header,
@@ -401,4 +402,48 @@ footer li
 footer a:hover
 {
     color: var(--main-color)
+}
+
+/*--- MEDIA QUERIES ---*/
+
+/*- Tablette -*/
+
+@media (max-width: 1024px) {
+
+    .offers{
+        display: flex;
+        flex-direction: column  ;
+    }
+
+    section .allLink
+    {
+        display: block;
+        margin: 0 2em 1em 2em;
+    }
+
+    .populaireContent
+    {
+        flex-direction: row;
+    }
+
+    .populaireContent a
+    {
+        width: 35%;
+    }
+
+    .activities a
+    {
+        display: block;
+        height: 280px;
+    }
+
+    .activities img
+    {
+        height: 200px;
+    }
+
+    footer
+    {
+        gap: 5em;
+    }
 }
