@@ -447,3 +447,153 @@ footer a:hover
         gap: 5em;
     }
 }
+
+/*- Petits appareils tel que les téléphones par exemple -*/
+@media (max-width: 767.98px) {
+    header
+    {
+        flex-direction: column;
+        gap: 4em;
+        margin: 1em 0;
+    }
+
+    figure
+    {
+        text-align: center;
+    }
+
+    nav
+    {
+        display: flex;
+        text-align: center;
+    }
+
+    nav a
+    {
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        padding-bottom: 0.5em;
+        border-bottom: 3px solid var(--filter-bg-color);
+    }
+
+    nav a:hover
+    {
+        border-top: none;
+        border-bottom: 3px solid var(--main-color);
+    }
+
+    button span
+    {
+        display: none;
+    }
+
+    input::placeholder
+    {
+        font-size: 12px ;
+    }
+
+    i.wen
+    {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: white;
+        padding: 0;
+    }
+
+    .filters
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters ul
+    {
+        flex-wrap: wrap;
+    }
+
+    .filters li
+    {
+        width: 30%;
+    }
+
+    .filters a
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 13px;
+    }
+
+    .filters i
+    {
+        margin-right: 0;
+    }
+
+    article
+    {
+        order: 2;
+        background-color: white;
+    }
+
+    .hebergements
+    {
+        flex-direction: column;
+    }
+
+    .hebergements a
+    {
+        width: 100%;
+    }
+
+    aside
+    {
+        order: 1;
+    }
+
+    .populaireHeader,
+    .populaireContent,
+    .hebergements,
+    article h2,
+    .activities div,
+    .activities h2
+    {
+        margin: 0.75em 1em;
+    }
+
+    section .allLink
+    {
+        background-color: white;
+        margin: 0 1em;
+    }
+    
+    .populaireContent
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0.75em 1em;
+    }
+
+    .populaireContent a
+    {
+        width: 100%;
+    }
+
+    .activities div
+    {
+        flex-direction: column;
+    }
+
+    .activities a
+    {
+        width: 100%;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+}
